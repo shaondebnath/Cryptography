@@ -1,4 +1,4 @@
-# Cryptography
+# Cryptography - Python
 
 ## Cryptography_ServerClient_Multithread" 
 run serverRSA__multithread.py in server machine
@@ -11,7 +11,7 @@ run serverRSA__multithread.py in server machine
 
 run clientRSA_multithread.py from client machine. 
 
-##BasicCryptography
+## BasicCryptography
 It shows the basic encryption and decryption in both AES and RSA methods
 
 ### cryptographyRSA
