@@ -8,19 +8,17 @@ from Crypto.PublicKey import RSA
 from Crypto import Random
 from Crypto.Cipher import AES
 
+#important Reference
+#https://www.techbeamers.com/python-tutorial-write-multithreaded-python-server/
 #https://medium.com/@weblab_tech/encrypted-client-server-communication-protection-of-privacy-and-integrity-with-aes-and-rsa-in-c7b180fe614e
 #https://github.com/mayankgureja/encryptedChatRSA/blob/master/encryptedChat.py
 #http://studyraspberrypi.blogspot.com/2016/01/sending-rsa-encrypted-message-from.html
-#random_generator = Random.new().read
-#private_key = RSA.generate(1024, random_generator)
-#public_key = private_key.publickey()
-#print ("public_key = "+ str(public_key.exportKey()))
 
 	
 class encryption:
 
     def __init__(self, message):
-        ####
+
         #host = socket.gethostname()
         host = "130.149.22.93"
         port = 2004
@@ -29,17 +27,6 @@ class encryption:
 
         server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         server.connect((host, port))
-
-        '''while MESSAGE != 'exit':
-            server.send(MESSAGE)
-            data = server.recv(BUFFER_SIZE)
-            print " Client2 received data:", data
-            MESSAGE = raw_input("tcpClientA: Enter message to continue/ Enter exit:")
-
-        server.close()'''
-
-        ####
-
 
         #Tell server that connection is OK
         server.sendall("publicKey Request")

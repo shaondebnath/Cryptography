@@ -11,6 +11,8 @@ from Crypto.PublicKey import RSA
 from Crypto import Random
 #from Crypto.Cipher import AES
 
+#important Reference
+#https://www.techbeamers.com/python-tutorial-write-multithreaded-python-server/
 #https://medium.com/@weblab_tech/encrypted-client-server-communication-protection-of-privacy-and-integrity-with-aes-and-rsa-in-c7b180fe614e
 #https://github.com/mayankgureja/encryptedChatRSA/blob/master/encryptedChat.py
 #http://studyraspberrypi.blogspot.com/2016/01/sending-rsa-encrypted-message-from.html
@@ -58,11 +60,6 @@ class ClientThread(Thread):
                 break
 
 
-	
-#if __name__ == "__main__":
-
-    # Multithreaded Python server : TCP Server Socket Program Stub
-
 #Generate private and public keys
 random_generator = Random.new().read
 private_key = RSA.generate(1024, random_generator)
@@ -95,25 +92,6 @@ while True:
 
     for t in threads: 
         t.join() 
-
-
-
-
-
-#Declartion
-#mysocket = socket.socket()
-host = socket.gethostbyname(socket.getfqdn())
-#port = 7777
-encrypt_str = "encrypted_message="
-
-if host == "127.0.1.1":
-    import commands
-    host = commands.getoutput("hostname -I")
-print ("host = " + host)
-
-
-
-
 
 
 
