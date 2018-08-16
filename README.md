@@ -1,12 +1,12 @@
 # Cryptography - Python
 
-## Cryptography_ServerClient_Multithread" 
+## Cryptography_ServerClient_Multithread
 run serverRSA__multithread.py in server machine
 
 run clientRSA_multithread.py from client machine. (multiple client communication possible)
 
 
-## Cryptography_ServerClient_singlethread" 
+## Cryptography_ServerClient_singlethread
 run serverRSA_singleThread.py in server machine
 
 run clientRSA_singleThread.py from client machine. 
