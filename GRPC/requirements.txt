@@ -10,7 +10,6 @@ ipaddress==1.0.22
 netifaces==0.10.7
 protobuf==3.6.1
 pycparser==2.18
-pycrypto==2.6.1
 pyOpenSSL==18.0.0
 pyserial==3.4
 six==1.11.0
