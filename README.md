@@ -18,6 +18,17 @@ run cryptographyRSA.py
 
 Generate public and private key and save them as file. During encryption or decryption, it uses those files.
 
+## GRPC
 
+This version is created using grpc framework, Please make sure you have grpc requirements installed before using it. for more info visit https://grpc.io/docs/quickstart/python.html
+
+
+run ssl_server.py in server machine
+
+(server machine should have server.crt and server.key)
+
+run ssl_client.py in client machine
+
+(client machine should  have server.crt)
 
 
