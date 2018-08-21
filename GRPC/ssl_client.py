@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """The Python implementation of the GRPC helloworld.Greeter client."""
-# booking ID 218530199
+
 from __future__ import print_function
 
 import grpc

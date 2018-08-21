@@ -22,6 +22,24 @@ Generate public and private key and save them as file. During encryption or decr
 
 This version is created using grpc framework, Please make sure you have grpc requirements installed before using it. for more info visit https://grpc.io/docs/quickstart/python.html
 
+Use Virtualenv: 
+
+sudo apt-get install virtualenv
+
+if you have multiple version of phython in your PC, use phython > 3.5 to create venv
+
+ $which python3
+ 
+ $virtualenv venvSila -p /usr/bin/python3
+ 
+ $ cd Cryptography-Python/GRPC/
+ 
+ $ pip install - r requirements.txt
+
+
+create ssl key:
+
+$ openssl req -newkey rsa:2048 -nodes -keyout server.key -x509 -days 365 -out server.crt
 
 run ssl_server.py in server machine
 
