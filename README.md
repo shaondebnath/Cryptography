@@ -28,9 +28,13 @@ sudo apt-get install virtualenv
 
 if you have multiple version of phython in your PC, use phython > 3.5 to create venv
 
- $which python3
+ $ which python3
  
- $virtualenv venvSila -p /usr/bin/python3
+ result is like : /usr/bin/python3
+ 
+ $ virtualenv venvSila -p /usr/bin/python3
+ 
+ $ source venvSila/bin/active
  
  $ cd Cryptography-Python/GRPC/
  
